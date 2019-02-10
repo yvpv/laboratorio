@@ -78,12 +78,16 @@ WSGI_APPLICATION = 'lab.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'laboratorios',
-        'USER': 'admin',
-        'PASSWORD':'admin',
-        'HOST':'localhost',
-        'PORT':'5432',
+        #base de datos en postgres por ahora deshabilitada
+#        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#        'NAME': 'laboratorios',
+#        'USER': 'admin',
+#        'PASSWORD':'admin',
+#        'HOST':'localhost',
+#        'PORT':'5432',
+        #temporal mientras se testea
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME':'sqlite3.db',
     }
 }
 
