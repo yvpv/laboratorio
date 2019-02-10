@@ -11,6 +11,7 @@ class Asistencia(models.Model):
     entrada = models.TimeField('Hora Entrada')
     salida = models.TimeField('Hora Salida')
     asistio = models.BooleanField(default = True)
+    fecha = models.DateField('Fecha')
 
     def __str__(self):
         return '%s %s' % (self.profesor, self.materia)

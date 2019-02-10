@@ -4,6 +4,6 @@ from .models import Asistencia
 # Register your models here.
 
 class AsistenciaDisplay(admin.ModelAdmin):
-    list_display = ('profesor','materia','seccion','laboratorio_asignado','asistio')
+    list_display = ('profesor','materia','seccion','laboratorio_asignado','asistio','fecha')
 
 admin.site.register(Asistencia, AsistenciaDisplay)
